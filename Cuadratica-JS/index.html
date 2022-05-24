@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ecuación Cudrática</title>
+	<link rel="stylesheet" type="text/css" href="css/cuadratica.css">
+	<script type="text/javascript" src="js/cuadratica.js"></script>
+</head>
+<body onload="iniciar();">
+	<div>
+		<h2>Ecuación Cuadrática</h2>
+		<table>
+			<tr>
+				<td><b>A<em>x</em><sup>2</sup></b></td>
+				<td><b>B<em>x</em></b></td>
+				<td><b>C</b></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="valora"></td>
+				<td><input type="text" id="valorb"></td>
+				<td><input type="text" id="valorc"></td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td>Raiz 1</td>
+				<td></td>
+				<td>Raíz 2</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="rst1" readonly=""></td>
+				<td></td>
+				<td><input type="text" id="rst2" readonly=""></td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td><button onclick="calcular();">Calcular</button></td>
+				<td></td>
+				<td><button onclick="limpiar();">Limpiar</button></td>
+			</tr>
+		</table>
+	</div>
+	<div id="error">
+		<h3>Debe escribir sólo números para los Coeficientes A, B y C</h3>
+	</div>
+	<div id="nodef">
+		<h3>Raíces no definidas</h3>
+	</div>
+</body>
+</html>

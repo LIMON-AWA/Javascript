@@ -1,0 +1,41 @@
+*{
+	font:  1.1em Arial;
+}
+
+body{
+	width: 600px;
+	margin: 0px auto;
+	text-align: center;	
+}
+
+input[type=email]{
+	border: 1px solid black;
+	padding: 5px;
+	margin: 5px;
+	box-sizing: border-box;
+	width: 85%;
+	margin-bottom: 0px;   /* Margen inferior en 0 px  */
+}
+
+p *{
+	display: inline-block;
+}
+
+
+/* En lugar de modificar el padding se trabaja con el display */
+.error{	
+	width: 85%;
+	padding: 5px;      
+	margin-top: 0px;    /* Margen superior */
+	font-size: 80%;
+	color: white;
+	background-color: #A84759;
+	border-radius: 5px;
+
+	box-sizing: border-box;
+	display: none;                 /* No es visible */
+}
+
+.error.active{
+	display: inline-block;   /* Se hace visible el span para desplegar el error /
+}

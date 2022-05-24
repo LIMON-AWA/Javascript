@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio Formularios</title>
+	<script JavaScript src="script/datos.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/datos.css">
+</head>
+<body>
+	<form action="destino.html" method="POST" name="formusuario" enctype="multipart/form-data">
+		<fieldset>
+			<datalist id="listanom">
+				<option value="Juan Pablo"></option>
+				<option value="María Clara"></option>
+			</datalist>
+
+			<legend>Información de Usuario</legend>
+			
+			<label>Nombres </label>
+			<input type="text" name="nombre" required placeholder="Escriba su nombre" list="listanom">
+			<br><br>
+
+			<label>Apellidos </label>
+			<input type="text" name="ape" required>
+			<br><br>
+
+			<label>Fecha de Nacimiento</label>
+			<input type="date" name="fnac" required>
+			<br><br>
+
+			<label>Identificación </label>
+			<input type="number" name="doc" required max="999999999999">
+			<br><br>
+
+			<label>Contraseña </label>
+			<input type="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}" required>
+			<br><br>
+
+			<label>Correo Electrónico </label>
+			<input type="email" name="cor" required>
+			<br><br>
+
+			<label>Fotografía </label>
+			<input type="file" name="foto" required>			
+			<br><br>
+
+			<label>Página Web</label>
+			<input type="url" name="pweb" required>
+			<br><br>
+
+			<label>Color favorito </label>
+			<input type="color" name="colfav">
+			<input type="image" src="img/cursorpointer.png" width="25" onclick="return tienepunto();">
+			<br><br>
+
+			<label>Selecione fruta favorita</label>
+			<select name="fruta">
+				<option value="mz">Manzanas</option>
+				<option value="pe">Peras</option>
+				<option value="mn" selected>Mandarinas</option>
+				<option value="pi">Piñas</option>
+			</select>
+			<br><br>
+
+			<fieldset id="edades">
+				<legend>Selecione Rango de Edad</legend>
+				<input type="radio" name="edad" value="1"><label> Soy mayor de edad</label><br>
+				<input type="radio" name="edad" value="1"><label> Soy menor de edad</label><br>
+				<input type="radio" name="edad" value="3"><label> No tengo edad</label>
+			</fieldset>
+			<br>
+
+			<label>Mensaje</label><br>
+			<textarea name="msj" required></textarea>
+			<br><br>
+			<div align="center">
+				<button type="submit" onclick="return tienepunto();" class="boton"> Guardar </button>
+				<button type="reset" class="boton">Limpiar </button>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
+
+
+
+

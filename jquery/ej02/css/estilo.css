@@ -1,0 +1,31 @@
+table{
+	margin: 0px auto;
+	border: 3px solid green;
+	border-radius: 5px;
+	box-shadow: 5px 5px 8px -3px #007A26;
+}
+
+.display{
+	width: 92%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 22px;
+	background-color: #B8FCD2;
+	border: 3px solid black;
+	border-radius: 5px;
+	text-align: right;
+}
+
+input[type=button]{
+	width: 50px;
+	height: 50px;
+	font-size: 19px;
+	background-color: #0CBC59;
+	border: 3px solid black;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+td, th{
+	text-align: center;
+}

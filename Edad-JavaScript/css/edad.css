@@ -1,0 +1,18 @@
+*{
+	font-family: Arial;
+	font-size: 25px;
+	text-align: center;
+}
+
+h1{
+	font-size: 35px;
+}
+
+body{
+	background-color: #F5EEC9;
+	color: blue;
+}
+
+.result{
+	display: none;
+}

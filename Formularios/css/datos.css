@@ -1,0 +1,48 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+}
+
+fieldset{
+	margin: 10px auto;
+	width: 400px;
+	color:  blue;
+	font-weight: bold;
+	border-color: blue;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+label{
+	color:  black;
+	font-weight: normal;
+}
+
+input, textarea, select{
+	color:  green;
+}
+
+textarea{
+	width: 60%;
+	height: 100px;
+}
+
+#edades{
+	width: 200px;
+	margin: 0px;
+	border-color: black;
+	border-width: 1px;
+}
+
+input[type=file]{
+	color:  red;
+}
+
+.boton{
+	padding: 2px 5px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+

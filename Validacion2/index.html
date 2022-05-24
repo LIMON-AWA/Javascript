@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validación JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">	
+</head>
+<body>
+	<form name="valform">
+		<p>
+			<label for="mail">
+				<span>Ingrese dirección de Correo:</span>
+				<input type="email" name="mail" id="mail" required minlength="8">
+				<span class="error" aria-live="polite"></span>				
+			</label>
+		</p>
+		<button>Enviar</button>
+	</form>
+	<script src="js/valida.js"></script>
+</body>
+</html>
